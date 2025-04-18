@@ -18,6 +18,7 @@ focus (move | next): key(ctrl-`)
 (element | bit) [next]: key(tab)
 (element | bit) (previous | last): key(shift-tab)
 (slack | lack) (my stuff | activity): key(cmd-shift-m)
+(slack | lack) (later): key(ctrl-4)
 (slack | lack) directory: key(cmd-shift-e)
 (slack | lack) (starred [items] | stars): key(cmd-shift-s)
 (slack | lack) unread [messages]: key(cmd-shift-a)
@@ -40,14 +41,19 @@ bold: key(cmd-b)
 (slack | lack) snippet: key(cmd-shift-enter)
 # Calls
 ([toggle] mute | unmute): key(m)
-(slack | lack) huddle: key(cmd-shift-h)
+# (slack | lack) huddle: key(cmd-shift-h)
 (slack | lack) ([toggle] video): key(v)
 (slack | lack) invite: key(a)
 # Miscellaneous
 (slack | lack) shortcuts: key(cmd-/)
 emote <user.text>: "{text}"
-toggle left sidebar: key(cmd-shift-d)
-toggle right sidebar: key(cmd-.)
+toggle left [sidebar | bar]: key(cmd-shift-d)
+toggle right [sidebar | bar]: key(cmd-.)
+bar switch [left]: key(cmd-shift-d)
+bar switch right: key(cmd-.)
+
+# not sure if this works correctly...
+format message: key(ctrl-shift-f)
 
 # DEPRECATED
 (move | next) focus:

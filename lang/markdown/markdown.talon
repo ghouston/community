@@ -44,3 +44,18 @@ list six:
 link:
     "[]()"
     key(left:3)
+
+(toggle|togo|show|switch) preview:
+    key('cmd-k')
+    sleep(200ms)
+    key('v')
+
+task [<phrase>]:
+    edit.line_start()
+    "- [ ] {phrase}"
+task two [<phrase>]:
+    edit.line_start()
+    "    - [ ] {phrase}"
+task three [<phrase>]:
+    edit.line_start()
+    "        - [ ] {phrase}"
